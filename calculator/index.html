@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcualtor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main__div">
+      <div class="title">
+        <h2>Calculator</h2>
+      </div>
+      <div class="calculator">
+        <div class="text__field__div">
+          <input type="text" name="textField" id="textField" placeholder="0" />
+        </div>
+        <div id="buttons">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <button type="button" class="red" id="clear">C</button>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    class="green"
+                    onclick="handleButtonData('()')"
+                  >
+                    ()
+                  </button>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    class="green"
+                    onclick="handleButtonData('%')"
+                  >
+                    %
+                  </button>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    class="green"
+                    onclick="handleButtonData('/')"
+                  >
+                    /
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button type="button" onclick="handleButtonData(7)">7</button>
+                </td>
+                <td>
+                  <button type="button" onclick="handleButtonData(8)">8</button>
+                </td>
+                <td>
+                  <button type="button" onclick="handleButtonData(9)">9</button>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    class="green"
+                    onclick="handleButtonData('*')"
+                  >
+                    X
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button type="button" id="four" onclick="handleButtonData(4)">
+                    4
+                  </button>
+                </td>
+                <td>
+                  <button type="button" id="five" onclick="handleButtonData(5)">
+                    5
+                  </button>
+                </td>
+                <td>
+                  <button type="button" id="six" onclick="handleButtonData(6)">
+                    6
+                  </button>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    class="green"
+                    onclick="handleButtonData('-')"
+                  >
+                    -
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button type="button" id="one" onclick="handleButtonData(1)">
+                    1
+                  </button>
+                </td>
+                <td>
+                  <button type="button" id="two" onclick="handleButtonData(2)">
+                    2
+                  </button>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    id="three"
+                    onclick="handleButtonData(3)"
+                  >
+                    3
+                  </button>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    class="green"
+                    onclick="handleButtonData('+')"
+                  >
+                    +
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button type="button" onclick="handleButtonData('+/-')">
+                    +/-
+                  </button>
+                </td>
+                <td>
+                  <button type="button" onclick="handleButtonData(0)">0</button>
+                </td>
+                <td>
+                  <button type="button" onclick="handleButtonData('.')">
+                    .
+                  </button>
+                </td>
+                <td>
+                  <button type="button" class="green" onclick="getResult()">
+                    =
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

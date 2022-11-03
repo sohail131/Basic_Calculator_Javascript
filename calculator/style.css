@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  min-width: 500px;
+}
+
+.main__div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: aquamarine;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  background-color: lightslategray;
+  border: 1px solid aqua;
+  min-width: 500px;
+  margin-top: 2rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text__field__div input[type="text"] {
+  width: 400px;
+  height: 50px;
+  font-size: 1.5rem;
+  background-color: lightgreen;
+  font-weight: 400;
+}
+
+input[type="text"] {
+  text-align: right;
+}
+
+button {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+table tbody tr td button {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
